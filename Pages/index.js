@@ -1,13 +1,12 @@
-import NavBar from '../components/NavBar';
+import TaskList from '../components/TaskList';
+import TaskForm from '../components/TaskForm';
 
-function Home() {
+export default function Home() {
   return (
-    <>
-      <NavBar />
-      <h1>Welcome to the Next.js App</h1>
-      <p>This app uses MongoDB and basic React techniques!</p>
-    </>
+    <div style={{ padding: '20px' }}>
+      <h1>Task Management</h1>
+      <TaskForm />
+      <TaskList />
+    </div>
   );
 }
-
-export default Home;
